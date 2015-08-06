@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-static-libgcc" />
@@ -26,6 +27,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -38,7 +40,9 @@
 		<Linker>
 			<Add option="-static-libgcc -static-libstdc++" />
 		</Linker>
+		<Unit filename="include/card.h" />
 		<Unit filename="matcg.cpp" />
+		<Unit filename="src/card.cpp" />
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="4" line="0" />
