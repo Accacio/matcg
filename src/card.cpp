@@ -1,8 +1,10 @@
 #include "card.h"
 
-Card::Card()
+Card::Card(string n,int a, int l)
 {
-    //ctor
+    name=n;
+    attack=a;
+    life=l;
 }
 
 Card::~Card()
