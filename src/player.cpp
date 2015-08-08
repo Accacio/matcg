@@ -2,8 +2,8 @@
 
 Player::Player(string n)
 {
-    life=20;
-    name=n;
+    life_=20;
+    name_=n;
 }
 
 Player::~Player()

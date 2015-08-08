@@ -6,13 +6,13 @@ using namespace std;
 class Player
 {
     public:
-        int life;
-        string name;
+        int life_;
+        string name_;
         Player(string n);
         virtual ~Player();
         friend std::ostream& operator<< (std::ostream& stream, const Player& player)
     {
-        stream << player.name;
+        stream << player.name_;
         return stream;
     }
     protected:

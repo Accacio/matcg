@@ -18,7 +18,7 @@ void Cemetery::showcemetery()
         return;
     }
     cout <<"Cards in cemetery are:\n";
-    for (vector<Card>::iterator i = cardsincemetery.end()-1;
+    for ( auto i = cardsincemetery.end()-1;
             i >= cardsincemetery.begin();
             i--)
     {

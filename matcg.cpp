@@ -17,17 +17,17 @@ int main()
     cout <<guerreiro;
 
     cout <<guerreiro2;
-    cout << "Guerreiro is alive?"<<guerreiro.alive<<endl;
-    cout << "Guerreiro 2 is alive?"<<guerreiro2.alive<<endl;
+    cout << "Guerreiro is alive?"<<guerreiro.alive_<<endl;
+    cout << "Guerreiro 2 is alive?"<<guerreiro2.alive_<<endl;
 
     cout<<endl<<"guerreiro ataca guerreiro2"<<endl;
     guerreiro>>guerreiro2;
     Cemetery cemetery;
-    if(!guerreiro2.alive)
+    if(!guerreiro2.alive_)
     {
         cemetery<=guerreiro2;
     }
-    if(!guerreiro.alive)
+    if(!guerreiro.alive_)
     {
         cemetery<=guerreiro;
     }

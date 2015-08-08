@@ -2,19 +2,19 @@
 
 Card::Card(string n,int a, int l,bool al)
 {
-    name=n;
-    alive_init=alive=al;
-    attack_init=attack=a;
-    life_init=life=l;
+    name_=n;
+    alive_init_=alive_=al;
+    attack_init_=attack_=a;
+    life_init_=life_=l;
 }
 
 Card::~Card()
 {
     //dtor
 }
-void Card::restoreinitvals()
+void Card::restore_init_vals()
 {
-    alive=alive_init;
-    attack=attack_init;
-    life=life_init;
+    alive_=alive_init_;
+    attack_=attack_init_;
+    life_=life_init_;
 }
