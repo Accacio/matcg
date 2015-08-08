@@ -12,6 +12,11 @@ public:
     vector<Card> cardsincemetery;
     void showcemetery();
     void sendtocemetery(Card card);
+    void operator<=(const Card & card)
+    {
+        sendtocemetery(card);
+        return;
+    }
 protected:
 private:
 

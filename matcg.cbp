@@ -41,8 +41,14 @@
 			<Add option="-static-libgcc -static-libstdc++" />
 		</Linker>
 		<Unit filename="include/card.h" />
+		<Unit filename="include/cemetery.h" />
+		<Unit filename="include/game.h" />
+		<Unit filename="include/player.h" />
 		<Unit filename="matcg.cpp" />
 		<Unit filename="src/card.cpp" />
+		<Unit filename="src/cemetery.cpp" />
+		<Unit filename="src/game.cpp" />
+		<Unit filename="src/player.cpp" />
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="4" line="0" />
