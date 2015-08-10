@@ -12,6 +12,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++11" />
 					<Add option="-g" />
 					<Add directory="include" />
 				</Compiler>
@@ -27,6 +28,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add option="-std=c++11" />
 					<Add directory="include" />
 				</Compiler>
 				<Linker>
@@ -35,6 +37,7 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-std=c++11" />
 			<Add option="-Wall" />
 		</Compiler>
 		<Linker>
@@ -42,11 +45,13 @@
 		</Linker>
 		<Unit filename="include/card.h" />
 		<Unit filename="include/cemetery.h" />
+		<Unit filename="include/deck.h" />
 		<Unit filename="include/game.h" />
 		<Unit filename="include/player.h" />
 		<Unit filename="matcg.cpp" />
 		<Unit filename="src/card.cpp" />
 		<Unit filename="src/cemetery.cpp" />
+		<Unit filename="src/deck.cpp" />
 		<Unit filename="src/game.cpp" />
 		<Unit filename="src/player.cpp" />
 		<Extensions>

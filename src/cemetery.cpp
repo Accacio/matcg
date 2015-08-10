@@ -19,7 +19,7 @@ void Cemetery::showcemetery()
     }
     cout <<"Cards in cemetery are:\n";
     for ( auto i = cardsincemetery.end()-1;
-            i >= cardsincemetery.begin();
+            i>=cardsincemetery.begin();
             i--)
     {
         cout<<*i<<endl;
