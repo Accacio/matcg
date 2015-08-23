@@ -27,6 +27,7 @@ int main()
     Monster guerreiro3("guerreiro3",2,3);
     Magic cartinha("cartinha magica");
     Deck j;
+    goblin>>guerreiro3;
     j<=cartinha;
     j<=guerreiro3;
     j<=guerreiro3;

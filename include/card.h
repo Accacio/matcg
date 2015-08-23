@@ -4,7 +4,12 @@
 #include<string>
 #include<player.h>
 
+
+
+
 using namespace std;
+
+
 
 class Card
 {
@@ -13,7 +18,7 @@ public:
     string name_;
     Card();
     virtual ~Card();
-    virtual void print() const { std::cout << name_; }
+    virtual void print() const {}
     bool operator==(const Card & card)
     {
         bool s;
@@ -33,9 +38,9 @@ public:
 
 protected:
     //create initial values, in case restoration is needed.
-    bool alive_init_;
-    int life_init_;
-    int attack_init_;
+    bool alive_init_;/**< Initial Alive value, in case restoration is needed. */
+    int life_init_;/**< Initial Life value, in case restoration is needed.*/
+    int attack_init_;/**< Initial Attack value, in case restoration is needed. */
 private:
 
 
