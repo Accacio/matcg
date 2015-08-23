@@ -10,7 +10,7 @@ Deck::~Deck()
     //dtor
 }
 
-void Deck::addtodeck(Card card)
+void Deck::addtodeck(Card *card)
 {
     if (!(kmaxcardsindeck==cardsindeck.size()))
     {
@@ -52,7 +52,7 @@ void Deck::showdeck()
             i>=cardsindeck.begin();
             i--)
     {
-        cout<<*i<<endl;
+        cout<<**i<<endl;
     }
     return;
 }
