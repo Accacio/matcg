@@ -3,6 +3,7 @@
 #include <game.h>
 #include<cemetery.h>
 #include<card.h>
+#include<monster.h>
 #include<player.h>
 #include<deck.h>
 #include<vector>
@@ -14,16 +15,16 @@ using namespace std;
 
 int main()
 {
-    Card guerreiro("guerreiro",3,3);
-    Card guerreiro2("guerreiro2",2,4);
-    Card goblin("goblin",1,1);
-    Card guerreiro3("guerreiro3",2,3);
-    Deck j;
 
-    j<=guerreiro2;
-    j<=guerreiro;
-    j<=goblin;
-    // show vector
+    Monster guerreiro2("guerreiro2",2,4);
+    Monster goblin("goblin",1,1);
+    Monster guerreiro3("guerreiro3",2,3);
+    Deck j;
+    Card* pcard=&guerreiro2;
+    j<=&guerreiro3;
+    j<=&goblin;
+        j.showdeck();
+//     show vector
     cout<<"Before shuffling ";
     j.showdeck();
     cout<<"After shuffling ";
@@ -48,7 +49,6 @@ int main()
     }
     cemetery.showcemetery();
     */
-
 
 
 

@@ -13,11 +13,11 @@ class Deck
 public:
     Deck();
     virtual ~Deck();
-    vector<Card> cardsindeck;
-    void addtodeck(Card card);
+    vector<Card*> cardsindeck;
+    void addtodeck(Card *card);
     void removefromdeck();
     void shuffledeck();
-    void operator<=(const Card & card)
+    void operator<=(Card* card)
     {
         addtodeck(card);
         return;
