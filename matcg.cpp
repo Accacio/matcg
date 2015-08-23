@@ -14,6 +14,11 @@
 
 using namespace std;
 
+    void myfunction()
+    {
+        cout<<"fiz alguma coisa";
+    }
+
 int main()
 {
 
@@ -23,6 +28,7 @@ int main()
     Magic cartinha("cartinha magica");
     Deck j;
     j<=cartinha;
+    j<=guerreiro3;
     j<=guerreiro3;
     j<=goblin;
     j.showdeck();
