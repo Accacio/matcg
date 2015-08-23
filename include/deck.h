@@ -17,9 +17,9 @@ public:
     void addtodeck(Card *card);
     void removefromdeck();
     void shuffledeck();
-    void operator<=(Card* card)
+    void operator<=(Card& card)
     {
-        addtodeck(card);
+        addtodeck(&card );
         return;
     }
 

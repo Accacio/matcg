@@ -20,9 +20,8 @@ int main()
     Monster goblin("goblin",1,1);
     Monster guerreiro3("guerreiro3",2,3);
     Deck j;
-    Card* pcard=&guerreiro2;
-    j<=&guerreiro3;
-    j<=&goblin;
+    j<=guerreiro3;
+    j<=goblin;
         j.showdeck();
 //     show vector
     cout<<"Before shuffling ";
