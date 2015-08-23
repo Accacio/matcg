@@ -4,6 +4,7 @@
 #include<cemetery.h>
 #include<card.h>
 #include<monster.h>
+#include<magic.h>
 #include<player.h>
 #include<deck.h>
 #include<vector>
@@ -19,14 +20,16 @@ int main()
     Monster guerreiro2("guerreiro2",2,4);
     Monster goblin("goblin",1,1);
     Monster guerreiro3("guerreiro3",2,3);
+    Magic cartinha("cartinha magica");
     Deck j;
+    j<=cartinha;
     j<=guerreiro3;
     j<=goblin;
-        j.showdeck();
-//     show vector
-    cout<<"Before shuffling ";
     j.showdeck();
-    cout<<"After shuffling ";
+//     show vector
+    cout<<"Before shuffling";
+    j.showdeck();
+    cout<<"After shuffling";
     j.shuffledeck();
     j.showdeck();
 
