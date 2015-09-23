@@ -23,7 +23,7 @@
 
 ### Turno
 
-Cada turno é dividido em 4  partes:
+Cada turno é dividido em 5  partes:
 
 1. Leitura do tomo
 2. Alocação do campo
