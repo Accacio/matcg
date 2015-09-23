@@ -1,6 +1,80 @@
 # matcg
-Mathematical Trading Card Game
+**Mathematical Trading Card Game**
 
-Jogo de Cartas Matem�tico
+*Jogo de Cartas Matemático*
+
+## Regras do jogo
+
+### Partida
+
+* 2 Jogadores
+* 1 Campo de Batalha
+
+### Jogadores
+
+* *XX* Pontos de Vida
+* 1 Tomo
+* 1 Cemitério
+
+### Início da Partida
+
+* Cartas são embaralhadas 
+* Jogador que iniciará jogando será escolhido
+
+### Turno
+
+Cada turno é dividido em 4  partes:
+
+1. Leitura do tomo
+2. Alocação do campo
+3. Ataque
+4. Defesa
+5. Finalização do Turno
+
+#### Leitura do tomo
+
+* O jogador ativo pega as *xx* cartas do topo do tomo e coloca em sua mão
+
+#### Alocação do campo
+
+* O jogador ativo escolhe quais cartas irá invocar ao campo de batalha
+
+#### Ataque
+
+* O jogador ativo escolhe com quais cartas ele quer atacar o outro jogador
+
+#### Defesa
+
+* O outro jogador escolhe com quais cartas ele deseja bloquear
+
+#### Finalização do Turno
+
+* O jogador ativo se inativa e passa atividade para o outro jogador
+
+### Sobre as Cartas
+
+Cada carta possui um custo necessário para invocá-la no campo de batalha ou para realizar alguma habilidade especial.
+As cartas podem ser:
+
+1. Monstros
+2. Mágicas
+3. Híbridas
+4. **Manas**
+
+#### Monstros
+
+* Possuem Pontos de Vida
+* Possuem Ataque
+
+#### Mágicas
+
+* São capazes de realizar alguma habilidade especial
+
+#### Híbridas
+
+* Combinam as características dos outros anteriores
+
+
+
 
 
