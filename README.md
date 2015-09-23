@@ -48,7 +48,7 @@ Cada turno é dividido em 4  partes:
 * O outro jogador escolhe com quais cartas ele deseja bloquear
 
 #### Finalização do Turno
-
+* Existe o incremento do tempo de jogo em X unidades, que pode ser mudado através de feitiços.
 * O jogador ativo se inativa e passa atividade para o outro jogador
 
 ### Sobre as Cartas
@@ -64,17 +64,30 @@ As cartas podem ser:
 #### Monstros
 
 * Possuem Pontos de Vida
-* Possuem Ataque
+* Possuem Pontos de Ataque
 
 #### Mágicas
 
 * São capazes de realizar alguma habilidade especial
+* Podem permanecer no campo por um número explicitado de turnos
 
 #### Híbridas
 
-* Combinam as características dos outros anteriores
+* Combinam as características dos outros anteriores 
 
+#### Manas
 
+* Custo para invocar alguma carta
+
+### Dos Pontos de Vida, dos Pontos de Ataque e dos Feitiços
+
+* Os Pontos de Vida e de Ataque das cartas serão funções matemáticas cujo argumento é o tempo atual de jogo
+* Os feitiços irão alterar de alguma forma a Partida, mudando ou
+  * A função dos Pontos de Vida de uma carta ou o valor de Pontos de Vida de um Jogador
+  * A função dos Pontos de Ataque de uma carta
+  * O argumento da função dos Pontos de Vida ou de Ataque de uma carta
+  * O incremento de tempo dado entre turnos
+  * Etc...
 
 
 
