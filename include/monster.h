@@ -1,42 +1,42 @@
 #ifndef MONSTER_H
 #define MONSTER_H
-#include<card.h>
+#include "card.h"
 
 
 class Monster : public Card
 {
 public:
-    int life_;
-    int attack_;
-    Monster(string n,int a, int l,bool al=1);
+
+    Monster(std::string n,int a, int l,bool al=1);
     virtual ~Monster();
+
     void print() const
     {
-        cout <<name_<<endl<<attack_<<"/"<<life_<<endl;
+        std::cout <<name_<<"("<<attack_<<"/"<<life_<<") ";
     }
 
     //Attack Operator >> for card
-    void operator>>(Monster& card)
+    int operator>>(Monster& card)
     {
-        card.life_-=attack_;
-        if(card.life_<=0)
+
+        if(!card.get_attacked(attack_))
         {
-            card.alive_=false;
-            cout<<card<<" is dead";//TODO ENVIAR card pro cemitério
-            return;
+            //Other Died
+            return 1;
         }
-        life_-=card.attack_;
-        if(life_<=0)
+
+        if(!get_attacked(card.get_attack()))
         {
-            alive_=false;
-            cout<<name_<<" is dead";//TODO ENVIAR self pro cemitério
-            return;
+            //This Died
+            return -1;
         }
 
         //if it is needed to restore initial value to non-defeated monster
         //restore_init_vals();
         //card.restore_init_vals();
-        return;
+
+        //No one died
+        return 0;
     }
     //Attack Operator >> for player
     void operator>>(Player player)
@@ -44,15 +44,21 @@ public:
         player.life_=-attack_;
         if(player.life_<=0)
         {
-            cout<<player<<" is defated";
+            std::cout<<player<<" is defated";
         }
     }
 
 
     void restore_init_vals();
 
+    int get_life();
+    int get_attack();
+    bool get_attacked(int attack_value);
+
 protected:
 private:
+    int life_;
+    int attack_;
 };
 
 #endif // MONSTER_H

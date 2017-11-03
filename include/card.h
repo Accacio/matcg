@@ -5,17 +5,10 @@
 #include<player.h>
 
 
-
-
-using namespace std;
-
-
-
 class Card
 {
 public:
-    bool alive_;
-    string name_;
+
     Card();
     virtual ~Card();
     virtual void print() const {}
@@ -33,7 +26,7 @@ public:
      return os;
 }
 
-
+    std::string get_name();
 
 
 protected:
@@ -41,7 +34,10 @@ protected:
     bool alive_init_;/**< Initial Alive value, in case restoration is needed. */
     int life_init_;/**< Initial Life value, in case restoration is needed.*/
     int attack_init_;/**< Initial Attack value, in case restoration is needed. */
+    std::string name_;
+    bool alive_;
 private:
+
 
 
 };

@@ -14,15 +14,15 @@ void Cemetery::showcemetery()
 {
     if(cardsincemetery.empty())
     {
-        cout<<"cemetery is empty"<<endl;
+        std::cout<<"cemetery is empty"<<std::endl;
         return;
     }
-    cout <<"Cards in cemetery are:\n";
+    std::cout <<"Cards in cemetery are:\n";
     for ( auto i = cardsincemetery.end()-1;
             i>=cardsincemetery.begin();
             i--)
     {
-        cout<<*i<<endl;
+        std::cout<<*i<<std::endl;
     }
     return;
 }

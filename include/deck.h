@@ -5,15 +5,13 @@
 #include<ctime>
 #include<card.h>
 
-using namespace std;
-
 class Deck
 {
     int kmaxcardsindeck=3;
 public:
     Deck();
     virtual ~Deck();
-    vector<Card*> cardsindeck;
+    std::vector<Card*> cardsindeck;
     void addtodeck(Card *card);
     void removefromdeck();
     void shuffledeck();

@@ -1,6 +1,6 @@
 #include "player.h"
 
-Player::Player(string n)
+Player::Player(std::string n)
 {
     life_=20;
     name_=n;
