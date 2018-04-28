@@ -1,41 +1,36 @@
-#include<iostream>
-#include<conio.h>
+
 #include <game.h>
 #include<cemetery.h>
 #include<card.h>
 #include<monster.h>
 #include<player.h>
 #include<deck.h>
+
+#include<conio.h>
 #include<vector>
+#include<iostream>
 
-
-
-
-using namespace std;
-
-int main()
-{
-
-    Monster guerreiro2("guerreiro2",2,4);
-    Monster goblin("goblin",1,1);
-    Monster guerreiro3("guerreiro3",2,3);
+int main() {
+    Monster guerreiro2("guerreiro2", 2, 4);
+    Monster goblin("goblin", 1, 1);
+    Monster guerreiro3("guerreiro3", 2, 3);
     Deck j;
-    j<=guerreiro3;
-    j<=goblin;
-        j.showdeck();
-//     show vector
-    cout<<"Before shuffling ";
+    j <= guerreiro3;
+    j <= goblin;
     j.showdeck();
-    cout<<"After shuffling ";
+// show vector
+    std::cout << "Before shuffling ";
+    j.showdeck();
+    std::cout << "After shuffling ";
     j.shuffledeck();
     j.showdeck();
 
     /*
-    cout <<guerreiro;
-    cout <<guerreiro2;
-    cout << "Guerreiro is alive?"<<guerreiro.alive_<<endl;
-    cout << "Guerreiro 2 is alive?"<<guerreiro2.alive_<<endl;
-    cout<<endl<<"guerreiro ataca guerreiro2"<<endl;
+        std::cout <<guerreiro;
+        std::cout <<guerreiro2;
+        std::cout << "Guerreiro is alive?"<<guerreiro.alive_<<std::endl;
+        std::cout << "Guerreiro 2 is alive?"<<guerreiro2.alive_<<std::endl;
+        std::cout<<std::endl<<"guerreiro ataca guerreiro2"<<std::endl;
     guerreiro>>guerreiro2;
     Cemetery cemetery;
     if(!guerreiro2.alive_)
@@ -51,7 +46,8 @@ int main()
 
 
 
-    cout <<endl<<endl<<endl<<"terminou de rodar"<<endl;
+    std::cout << std::endl << std::endl;
+    std::cout << std::endl << "terminou de rodar"<< std::endl;
     _getch();
     return 0;
 }

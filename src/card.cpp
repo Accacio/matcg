@@ -1,11 +1,9 @@
 #include "card.h"
 
-Card::Card()
-{
+Card::Card() {
 }
 
-Card::~Card()
-{
-    //dtor
+Card::~Card() {
+    // dtor
 }
 

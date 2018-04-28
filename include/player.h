@@ -1,22 +1,22 @@
 #ifndef PLAYER_H
 #define PLAYER_H
-#include<string>
-using namespace std;
 
-class Player
-{
-    public:
+#include<string>
+
+
+class Player {
+ public:
         int life_;
         string name_;
-        Player(string n);
+        explicit Player(string n);
         virtual ~Player();
-        friend std::ostream& operator<< (std::ostream& stream, const Player& player)
-    {
+        friend std::ostream& operator<<
+            (std::ostream& stream, const Player& player) {
         stream << player.name_;
         return stream;
     }
-    protected:
-    private:
+ protected:
+ private:
 };
 
 #endif // PLAYER_H
