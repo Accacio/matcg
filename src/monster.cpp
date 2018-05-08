@@ -1,6 +1,7 @@
-#include "monster.h"
+#include "monster.hpp"
 
-Monster::Monster(string n, int a, int l, bool al) {
+
+Monster::Monster(std::string n, int a, int l, bool al) {
     name_ = n;
     alive_init_ = alive_ = al;
     attack_init_ = attack_ = a;

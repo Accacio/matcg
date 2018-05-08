@@ -1,7 +1,7 @@
 #ifndef CARD_H
 #define CARD_H
 
-#include<player.h>
+#include<player.hpp>
 
 #include<iostream>
 #include<string>
@@ -9,7 +9,7 @@
 class Card {
  public:
     bool alive_;
-    string name_;
+    std::string name_;
     Card();
     virtual ~Card();
     virtual void print() const { std::cout << name_; }

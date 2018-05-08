@@ -1,33 +1,29 @@
-// #include <game.h>
-// #include<cemetery.h>
-// #include<card.h>
-#include<monster.h>
-// #include<player.h>
-// #include<deck.h>
+#include<game.hpp>
+#include<cemetery.hpp>
+#include<card.hpp>
+#include<monster.hpp>
+#include<player.hpp>
+#include<deck.hpp>
 
-
-// #include<conio.h>
-// #include<vector>
+#include<vector>
 #include<iostream>
 
 int main(int argc, char *argv[]) {
-
-  std::cout << "Hello"  << "\n";
   Monster guerreiro2("guerreiro2", 2, 4, 0);
-  // Monster goblin("goblin", 1, 1);
-  // Monster guerreiro3("guerreiro3", 2, 3);
-  // Deck j;
-  // j <= guerreiro3;
-  // j <= goblin;
-  // j.showdeck();
-  // // show vector
-  // std::cout << "Before shuffling ";
-  // j.showdeck();
-  // std::cout << "After shuffling ";
-  // j.shuffledeck();
-  // j.
-  // // std::cout <<guerreiro;
-  // std::cout <<guerreiro2;
+  Monster goblin("goblin", 1, 1);
+  Monster guerreiro3("guerreiro3", 2, 3);
+  Deck j;
+  j.addtodeck(&guerreiro3);
+  j.addtodeck(&goblin);
+  j.showdeck();
+  // show vector
+  std::cout << "Before shuffling ";
+  j.showdeck();
+  std::cout << "After shuffling ";
+  j.shuffledeck();
+
+  // std::cout <<guerreiro;
+  std::cout <<guerreiro2;
   // std::cout << "Guerreiro is alive?"<<guerreiro.alive_<<std::endl;
   // using namespace std;::cout
   // << "Guerreiro 2 is alive?"<<guerreiro2.alive_<<std::endl;
@@ -47,8 +43,8 @@ int main(int argc, char *argv[]) {
 
 
 
-    // std::cout << std::endl << std::endl;
-    // std::cout << std::endl << "terminou de rodar"<< std::endl;
+
+
 
     return 0;
 }

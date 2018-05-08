@@ -1,14 +1,14 @@
 #ifndef MONSTER_H
 #define MONSTER_H
 
-#include<card.h>
+#include<card.hpp>
 #include <string>
 
 class Monster : public Card {
  public:
     int life_;
     int attack_;
-    Monster(string n, int a, int l, bool al = 1);
+    Monster(std::string n, int a, int l, bool al = true);
     virtual ~Monster();
     void print() const {
       std::cout << name_ << std::endl << attack_ << "/"<< life_ << std::endl;
@@ -16,7 +16,7 @@ class Monster : public Card {
 
     // Attack Operator >> for card
     void operator>>(Monster& card) {
-        card.life_- = attack_;
+        card.life_ -= attack_;
         if (card.life_ <= 0) {
             card.alive_ = false;
             // TODO(accacio) ENVIAR card pro cemiterio

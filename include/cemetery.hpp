@@ -1,15 +1,16 @@
 #ifndef CEMETERY_H
 #define CEMETERY_H
 
-#include<card.h>
+#include<card.hpp>
 #include<vector>
 
 class Cemetery {
  public:
     Cemetery();
     virtual ~Cemetery();
-    vector<Card> cardsincemetery;
+    std::vector<Card> cardsincemetery;
     void showcemetery();
+    /** @brief Sends Card to Cemetery*/
     void sendtocemetery(Card card);
     void operator<=(const Card & card) {
         sendtocemetery(card);

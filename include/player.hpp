@@ -1,14 +1,15 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#include <iostream>
 #include<string>
 
 
 class Player {
  public:
         int life_;
-        string name_;
-        explicit Player(string n);
+        std::string name_;
+        explicit Player(std::string n);
         virtual ~Player();
         friend std::ostream& operator<<
             (std::ostream& stream, const Player& player) {

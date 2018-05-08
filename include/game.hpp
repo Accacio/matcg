@@ -1,8 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include<card.h>
-#include<cemetery.h>
+#include<card.hpp>
+#include<cemetery.hpp>
 
 class Game {
  public:

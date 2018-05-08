@@ -1,4 +1,4 @@
-#include "deck.h"
+#include "deck.hpp"
 
 Deck::Deck() {
     // ctor
@@ -8,12 +8,13 @@ Deck::~Deck() {
     // dtor
 }
 
+
 void Deck::addtodeck(Card *card) {
     if (!(kmaxcardsindeck == cardsindeck.size())) {
         cardsindeck.push_back(card);
         return;
     }
-    cout << "Already have maximum number of cards" << endl;
+   std::cout << "Already have maximum number of cards" << std::endl;
     return;
 }
 
@@ -28,21 +29,21 @@ void Deck::removefromdeck() {
 void Deck::shuffledeck() {
     srand(time(0));
     for (auto i = (cardsindeck.end()-cardsindeck.begin())-1; i > 0; --i) {
-        swap (cardsindeck.begin()[i],
+      std::swap (cardsindeck.begin()[i],
               cardsindeck.begin()[rand()%cardsindeck.size()]);
     }
 }
 
 void Deck::showdeck() {
     if (cardsindeck.empty()) {
-        cout << "Deck is empty" << endl;
+        std::cout << "Deck is empty" << std::endl;
         return;
     }
-    cout << "Cards in Deck are:\n";
+    std::cout << "Cards in Deck are:\n";
     for ( auto i = cardsindeck.end()-1;
             i >= cardsindeck.begin();
             i--) {
-        cout << **i << endl;
+        std::cout << **i << std::endl;
     }
     return;
 }
