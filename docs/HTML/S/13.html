@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>include/player.hpp</title>
+<meta name='robots' content='noindex,nofollow'>
+<meta name='generator' content='GLOBAL-5.7.1'>
+</head>
+<body text='#191970' bgcolor='#f5f5dc' vlink='gray'>
+<a name='TOP'><h2><a href='../mains.html'>root</a>/<a href='../files/166.html'>include</a>/player.hpp</h2>
+<i><font color='green'>/* [&lt;][&gt;][^][v][top]<a href='#BOTTOM'>[bottom]</a><a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+<hr>
+<h2><a href='../J/10.html' title='Multiple included from 3 places.'>INCLUDED FROM</a></h2>
+<hr>
+<pre>
+<a name='L1'>   1 <font color='darkred'>#ifndef</font> <a href='../S/13.html#L2' title='Defined at 2 in include/player.hpp.'>PLAYER_H</a>
+<a name='L2'>   2 <font color='darkred'>#define</font> <a href='../S/13.html#L1' title='Refered from 1 in include/player.hpp.'>PLAYER_H</a>
+<a name='L3'>   3 
+<a name='L4'>   4 <font color='darkred'>#include</font> &lt;iostream&gt;
+<a name='L5'>   5 <font color='darkred'>#include</font>&lt;string&gt;
+<a name='L6'>   6 
+<a name='L7'>   7 
+<a name='L8'>   8 <b>class</b> <a href='../R/22.html' title='Multiple refered from 4 places.'>Player</a> <font color='red'>{</font>
+<a name='L9'>   9  <b>public</b>:
+<a name='L10'>  10         <b>int</b> <a href='../Y/168.html' title='Multiple used in 12 places.'>life_</a>;
+<a name='L11'>  11         <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/187.html' title='Multiple used in 6 places.'>string</a> <a href='../Y/172.html' title='Multiple used in 9 places.'>name_</a>;
+<a name='L12'>  12         <b>explicit</b> <a href='../D/22.html' title='Multiple defined in 3 places.'>Player</a>(<a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/187.html' title='Multiple used in 6 places.'>string</a> <a href='../Y/171.html' title='Multiple used in 42 places.'>n</a>);
+<a name='L13'>  13         <b>virtual</b> ~<a href='../D/22.html' title='Multiple defined in 3 places.'>Player</a>();
+<a name='L14'>  14         <b>friend</b> <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/174.html' title='Multiple used in 3 places.'>ostream</a>&amp; <b>operator</b>&lt;&lt;
+<a name='L15'>  15             (<a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/174.html' title='Multiple used in 3 places.'>ostream</a>&amp; <a href='../Y/186.html' title='Multiple used in 3 places.'>stream</a>, <b>const</b> <a href='../Y/4.html' title='Multiple used in 2 places.'>Player</a>&amp; <a href='../Y/175.html' title='Multiple used in 6 places.'>player</a>) <font color='red'>{</font>
+<a name='L16'>  16         <a href='../Y/186.html' title='Multiple used in 3 places.'>stream</a> &lt;&lt; <a href='../Y/175.html' title='Multiple used in 6 places.'>player</a>.<a href='../Y/172.html' title='Multiple used in 9 places.'>name_</a>;
+<a name='L17'>  17         <b>return</b> <a href='../Y/186.html' title='Multiple used in 3 places.'>stream</a>;
+<a name='L18'>  18     <font color='red'>}</font>
+<a name='L19'>  19  <b>protected</b>:
+<a name='L20'>  20  <b>private</b>:
+<a name='L21'>  21 <font color='red'>}</font>;
+<a name='L22'>  22 
+<a name='L23'>  23 <font color='darkred'>#endif</font> <i><font color='green'>// PLAYER_H</font></i>
+</pre>
+<hr>
+<a name='BOTTOM'>
+<i><font color='green'>/* [&lt;][&gt;][^][v]<a href='#TOP'>[top]</a>[bottom]<a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+</body>
+</html>

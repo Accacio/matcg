@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>include/deck.hpp</title>
+<meta name='robots' content='noindex,nofollow'>
+<meta name='generator' content='GLOBAL-5.7.1'>
+</head>
+<body text='#191970' bgcolor='#f5f5dc' vlink='gray'>
+<a name='TOP'><h2><a href='../mains.html'>root</a>/<a href='../files/166.html'>include</a>/deck.hpp</h2>
+<i><font color='green'>/* [&lt;][&gt;][^][v][top]<a href='#BOTTOM'>[bottom]</a><a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+<hr>
+<h2><a href='../J/7.html' title='Multiple included from 2 places.'>INCLUDED FROM</a></h2>
+<hr>
+<pre>
+<a name='L1'>   1 <font color='darkred'>#ifndef</font> <a href='../S/12.html#L2' title='Defined at 2 in include/deck.hpp.'>DECK_H</a>
+<a name='L2'>   2 <font color='darkred'>#define</font> <a href='../S/12.html#L1' title='Refered from 1 in include/deck.hpp.'>DECK_H</a>
+<a name='L3'>   3 
+<a name='L4'>   4 
+<a name='L5'>   5 <font color='darkred'>#include</font>&lt;cstdlib&gt;
+<a name='L6'>   6 <font color='darkred'>#include</font>&lt;ctime&gt;
+<a name='L7'>   7 
+<a name='L8'>   8 <font color='darkred'>#include</font>&lt;vector&gt;
+<a name='L9'>   9 <font color='darkred'>#include</font>&lt;<a href='14.html'>card.hpp</a>&gt;
+<a name='L10'>  10 
+<a name='L11'>  11 <i><font color='green'>/** @brief Deck of Cards **/</font></i>
+<a name='L12'>  12 <b>class</b> <a href='../R/13.html' title='Multiple refered from 9 places.'>Deck</a> <font color='red'>{</font>
+<a name='L13'>  13     <b>int</b> <a href='../Y/166.html' title='Multiple used in 2 places.'>kmaxcardsindeck</a> = 3;
+<a name='L14'>  14  <b>public</b>:
+<a name='L15'>  15     <a href='../D/13.html' title='Multiple defined in 3 places.'>Deck</a>();
+<a name='L16'>  16     <b>virtual</b> ~<a href='../D/13.html' title='Multiple defined in 3 places.'>Deck</a>();
+<a name='L17'>  17     <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/192.html' title='Multiple used in 2 places.'>vector</a>&lt;<a href='../D/9.html' title='Multiple defined in 3 places.'>Card</a>*&gt; <a href='../Y/147.html' title='Multiple used in 11 places.'>cardsindeck</a>;
+<a name='L18'>  18     <i><font color='green'>/**  @brief Adds card to deck @param Card *card</font></i>
+<a name='L19'>  19 <i><font color='green'>     *   Card mimimi</font></i>
+<a name='L20'>  20 <i><font color='green'>     *</font></i>
+<a name='L21'>  21 <i><font color='green'>     */</font></i>
+<a name='L22'>  22     <b>void</b> <a href='../S/2.html#L12' title='Defined at 12 in src/deck.cpp.'>addtodeck</a>(<a href='../Y/1.html' title='Multiple used in 8 places.'>Card</a> *<a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>);
+<a name='L23'>  23     <i><font color='green'>/**  @brief Removes card from deck */</font></i>
+<a name='L24'>  24     <b>void</b> <a href='../S/2.html#L21' title='Defined at 21 in src/deck.cpp.'>removefromdeck</a>();
+<a name='L25'>  25     <i><font color='green'>/**  @brief Shuffles deck using random function seeded by time */</font></i>
+<a name='L26'>  26     <b>void</b> <a href='../S/2.html#L29' title='Defined at 29 in src/deck.cpp.'>shuffledeck</a>();
+<a name='L27'>  27     <i><font color='green'>/* operator to add card to deck */</font></i>
+<a name='L28'>  28     <b>void</b> <b>operator</b> &lt;&lt; (<a href='../Y/1.html' title='Multiple used in 8 places.'>Card</a>&amp; <a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>) <font color='red'>{</font>
+<a name='L29'>  29         <a href='../S/2.html#L12' title='Defined at 12 in src/deck.cpp.'>addtodeck</a>(&amp;<a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>);
+<a name='L30'>  30         <b>return</b>;
+<a name='L31'>  31     <font color='red'>}</font>
+<a name='L32'>  32 
+<a name='L33'>  33     <b>void</b> <a href='../S/2.html#L37' title='Defined at 37 in src/deck.cpp.'>showdeck</a>();
+<a name='L34'>  34  <b>protected</b>:
+<a name='L35'>  35  <b>private</b>:
+<a name='L36'>  36 <font color='red'>}</font>;
+<a name='L37'>  37 
+<a name='L38'>  38 <font color='darkred'>#endif</font> <i><font color='green'>// DECK_H</font></i>
+</pre>
+<hr>
+<a name='BOTTOM'>
+<i><font color='green'>/* [&lt;][&gt;][^][v]<a href='#TOP'>[top]</a>[bottom]<a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+</body>
+</html>

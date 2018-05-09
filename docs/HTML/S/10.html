@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>include/monster.hpp</title>
+<meta name='robots' content='noindex,nofollow'>
+<meta name='generator' content='GLOBAL-5.7.1'>
+</head>
+<body text='#191970' bgcolor='#f5f5dc' vlink='gray'>
+<a name='TOP'><h2><a href='../mains.html'>root</a>/<a href='../files/166.html'>include</a>/monster.hpp</h2>
+<i><font color='green'>/* [&lt;][&gt;]<a href='#L13'>[^]</a>[v][top]<a href='#BOTTOM'>[bottom]</a><a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+<hr>
+<h2><a href='../J/9.html' title='Multiple included from 2 places.'>INCLUDED FROM</a></h2>
+<hr>
+<h2>DEFINITIONS</h2>
+This source file includes following definitions.
+<ol>
+<li><a href='#L13' title='Defined at 13.'>print</a>
+</ol>
+<hr>
+<pre>
+<a name='L1'>   1 <font color='darkred'>#ifndef</font> <a href='../S/10.html#L2' title='Defined at 2 in include/monster.hpp.'>MONSTER_H</a>
+<a name='L2'>   2 <font color='darkred'>#define</font> <a href='../S/10.html#L1' title='Refered from 1 in include/monster.hpp.'>MONSTER_H</a>
+<a name='L3'>   3 
+<a name='L4'>   4 <font color='darkred'>#include</font>&lt;<a href='14.html'>card.hpp</a>&gt;
+<a name='L5'>   5 <font color='darkred'>#include</font> &lt;string&gt;
+<a name='L6'>   6 
+<a name='L7'>   7 <b>class</b> <a href='../R/19.html' title='Multiple refered from 8 places.'>Monster</a> : <b>public</b> <a href='../D/9.html' title='Multiple defined in 3 places.'>Card</a> <font color='red'>{</font>
+<a name='L8'>   8  <b>public</b>:
+<a name='L9'>   9     <b>int</b> <a href='../Y/168.html' title='Multiple used in 12 places.'>life_</a>;
+<a name='L10'>  10     <b>int</b> <a href='../Y/142.html' title='Multiple used in 7 places.'>attack_</a>;
+<a name='L11'>  11     <a href='../D/19.html' title='Multiple defined in 3 places.'>Monster</a>(<a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/187.html' title='Multiple used in 6 places.'>string</a> <a href='../Y/171.html' title='Multiple used in 42 places.'>n</a>, <b>int</b> <a href='../Y/136.html' title='Multiple used in 5 places.'>a</a>, <b>int</b> <a href='../Y/167.html' title='Multiple used in 3 places.'>l</a>, <b>bool</b> <a href='../Y/137.html' title='Multiple used in 3 places.'>al</a> = <b>true</b>);
+<a name='L12'>  12     <b>virtual</b> ~<a href='../D/19.html' title='Multiple defined in 3 places.'>Monster</a>();
+<a name='L13'>  13     <b>void</b> <a href='../S/14.html#L24' title='Refered from 24 in include/card.hpp.'>print</a>() <b>const</b> <font color='red'>{</font>
+<a name='L14'>  14       <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/148.html' title='Multiple used in 15 places.'>cout</a> &lt;&lt; <a href='../Y/172.html' title='Multiple used in 9 places.'>name_</a> &lt;&lt; <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/151.html' title='Multiple used in 6 places.'>endl</a> &lt;&lt; <a href='../Y/142.html' title='Multiple used in 7 places.'>attack_</a> &lt;&lt; "/"&lt;&lt; <a href='../Y/168.html' title='Multiple used in 12 places.'>life_</a> &lt;&lt; <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/151.html' title='Multiple used in 6 places.'>endl</a>;
+<a name='L15'>  15     <font color='red'>}</font>
+<a name='L16'>  16 
+<a name='L17'>  17     <i><font color='green'>// Attack Operator &gt;&gt; for card</font></i>
+<a name='L18'>  18     <b>void</b> <b>operator</b>&gt;&gt;(Monster&amp; <a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>) <font color='red'>{</font>
+<a name='L19'>  19         <a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>.<a href='../Y/168.html' title='Multiple used in 12 places.'>life_</a> -= <a href='../Y/142.html' title='Multiple used in 7 places.'>attack_</a>;
+<a name='L20'>  20         <b>if</b> (<a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>.<a href='../Y/168.html' title='Multiple used in 12 places.'>life_</a> &lt;= 0) <font color='red'>{</font>
+<a name='L21'>  21             <a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>.<a href='../Y/138.html' title='Multiple used in 5 places.'>alive_</a> = <b>false</b>;
+<a name='L22'>  22             <i><font color='green'>// TODO(accacio) ENVIAR card pro cemiterio</font></i>
+<a name='L23'>  23                   <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/148.html' title='Multiple used in 15 places.'>cout</a> &lt;&lt; <a href='../Y/145.html' title='Multiple used in 18 places.'>card</a> &lt;&lt; " is dead";
+<a name='L24'>  24             <b>return</b>;
+<a name='L25'>  25         <font color='red'>}</font>
+<a name='L26'>  26         <a href='../Y/168.html' title='Multiple used in 12 places.'>life_</a> -= <a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>.<a href='../Y/142.html' title='Multiple used in 7 places.'>attack_</a>;
+<a name='L27'>  27         <b>if</b> (<a href='../Y/168.html' title='Multiple used in 12 places.'>life_</a> &lt;= 0) <font color='red'>{</font>
+<a name='L28'>  28             <a href='../Y/138.html' title='Multiple used in 5 places.'>alive_</a> = <b>false</b>;
+<a name='L29'>  29             <i><font color='green'>// TODO(accacio) ENVIAR self pro cemiterio</font></i>
+<a name='L30'>  30                   <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/148.html' title='Multiple used in 15 places.'>cout</a> &lt;&lt; <a href='../Y/172.html' title='Multiple used in 9 places.'>name_</a> &lt;&lt; " is dead";
+<a name='L31'>  31             <b>return</b>;
+<a name='L32'>  32         <font color='red'>}</font>
+<a name='L33'>  33 
+<a name='L34'>  34         <i><font color='green'>// if it is needed to restore initial value to non-defeated monster</font></i>
+<a name='L35'>  35         <i><font color='green'>// restore_init_vals();</font></i>
+<a name='L36'>  36         <i><font color='green'>// card.restore_init_vals();</font></i>
+<a name='L37'>  37         <b>return</b>;
+<a name='L38'>  38     <font color='red'>}</font>
+<a name='L39'>  39     <b>void</b> <a href='../S/1.html#L15' title='Defined at 15 in src/monster.cpp.'>restore_init_vals</a>();
+<a name='L40'>  40     <i><font color='green'>// Attack Operator &gt;&gt; for player</font></i>
+<a name='L41'>  41     <b>void</b> <b>operator</b>&gt;&gt;(<a href='../Y/4.html' title='Multiple used in 2 places.'>Player</a> <a href='../Y/175.html' title='Multiple used in 6 places.'>player</a>) <font color='red'>{</font>
+<a name='L42'>  42         <a href='../Y/175.html' title='Multiple used in 6 places.'>player</a>.<a href='../Y/168.html' title='Multiple used in 12 places.'>life_</a> -= <a href='../Y/142.html' title='Multiple used in 7 places.'>attack_</a>;
+<a name='L43'>  43         <b>if</b> (<a href='../Y/175.html' title='Multiple used in 6 places.'>player</a>.<a href='../Y/168.html' title='Multiple used in 12 places.'>life_</a> &lt;= 0) <font color='red'>{</font>
+<a name='L44'>  44                   <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/148.html' title='Multiple used in 15 places.'>cout</a> &lt;&lt; <a href='../Y/175.html' title='Multiple used in 6 places.'>player</a> &lt;&lt; " is defated";
+<a name='L45'>  45         <font color='red'>}</font>
+<a name='L46'>  46     <font color='red'>}</font>
+<a name='L47'>  47  <b>protected</b>:
+<a name='L48'>  48  <b>private</b>:
+<a name='L49'>  49 <font color='red'>}</font>;
+<a name='L50'>  50 
+<a name='L51'>  51 <font color='darkred'>#endif</font> <i><font color='green'>// MONSTER_H</font></i>
+</pre>
+<hr>
+<a name='BOTTOM'>
+<i><font color='green'>/* [&lt;][&gt;][^]<a href='#L13'>[v]</a><a href='#TOP'>[top]</a>[bottom]<a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+</body>
+</html>

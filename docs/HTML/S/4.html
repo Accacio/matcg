@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>src/matcg.cpp</title>
+<meta name='robots' content='noindex,nofollow'>
+<meta name='generator' content='GLOBAL-5.7.1'>
+</head>
+<body text='#191970' bgcolor='#f5f5dc' vlink='gray'>
+<a name='TOP'><h2><a href='../mains.html'>root</a>/<a href='../files/167.html'>src</a>/matcg.cpp</h2>
+<i><font color='green'>/* [&lt;][&gt;]<a href='#L11'>[^]</a>[v][top]<a href='#BOTTOM'>[bottom]</a><a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+<hr>
+<h2>DEFINITIONS</h2>
+This source file includes following definitions.
+<ol>
+<li><a href='#L11' title='Defined at 11.'>main</a>
+</ol>
+<hr>
+<pre>
+<a name='L1'>   1 <font color='darkred'>#include</font>&lt;<a href='9.html'>game.hpp</a>&gt;
+<a name='L2'>   2 <font color='darkred'>#include</font>&lt;<a href='11.html'>cemetery.hpp</a>&gt;
+<a name='L3'>   3 <font color='darkred'>#include</font>&lt;<a href='14.html'>card.hpp</a>&gt;
+<a name='L4'>   4 <font color='darkred'>#include</font>&lt;<a href='10.html'>monster.hpp</a>&gt;
+<a name='L5'>   5 <font color='darkred'>#include</font>&lt;<a href='13.html'>player.hpp</a>&gt;
+<a name='L6'>   6 <font color='darkred'>#include</font>&lt;<a href='12.html'>deck.hpp</a>&gt;
+<a name='L7'>   7 
+<a name='L8'>   8 <font color='darkred'>#include</font>&lt;vector&gt;
+<a name='L9'>   9 <font color='darkred'>#include</font>&lt;iostream&gt;
+<a name='L10'>  10 
+<a name='L11'>  11 <b>int</b> main(<b>int</b> <a href='../Y/140.html' title='Multiple used in 20 places.'>argc</a>, <b>char</b> *<a href='../Y/141.html' title='Multiple used in 7 places.'>argv</a>[]) <font color='red'>{</font>
+<a name='L12'>  12   <a href='../D/19.html' title='Multiple defined in 3 places.'>Monster</a> <a href='../Y/154.html' title='Multiple used in 2 places.'>guerreiro2</a>("guerreiro2", 2, 4, 0);
+<a name='L13'>  13   <a href='../D/19.html' title='Multiple defined in 3 places.'>Monster</a> <a href='../Y/153.html' title='Multiple used in 2 places.'>goblin</a>("goblin", 1, 1);
+<a name='L14'>  14   <a href='../D/19.html' title='Multiple defined in 3 places.'>Monster</a> <a href='../Y/155.html' title='Multiple used in 2 places.'>guerreiro3</a>("guerreiro3", 2, 3);
+<a name='L15'>  15   <a href='../D/13.html' title='Multiple defined in 3 places.'>Deck</a> <a href='../Y/165.html' title='Multiple used in 6 places.'>j</a>;
+<a name='L16'>  16   <a href='../Y/165.html' title='Multiple used in 6 places.'>j</a>.<a href='../S/2.html#L12' title='Defined at 12 in src/deck.cpp.'>addtodeck</a>(&amp;<a href='../Y/155.html' title='Multiple used in 2 places.'>guerreiro3</a>);
+<a name='L17'>  17   <a href='../Y/165.html' title='Multiple used in 6 places.'>j</a>.<a href='../S/2.html#L12' title='Defined at 12 in src/deck.cpp.'>addtodeck</a>(&amp;<a href='../Y/153.html' title='Multiple used in 2 places.'>goblin</a>);
+<a name='L18'>  18   <a href='../Y/165.html' title='Multiple used in 6 places.'>j</a>.<a href='../S/2.html#L37' title='Defined at 37 in src/deck.cpp.'>showdeck</a>();
+<a name='L19'>  19   <i><font color='green'>// show vector</font></i>
+<a name='L20'>  20   <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/148.html' title='Multiple used in 15 places.'>cout</a> &lt;&lt; "Before shuffling ";
+<a name='L21'>  21   <a href='../Y/165.html' title='Multiple used in 6 places.'>j</a>.<a href='../S/2.html#L37' title='Defined at 37 in src/deck.cpp.'>showdeck</a>();
+<a name='L22'>  22   <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/148.html' title='Multiple used in 15 places.'>cout</a> &lt;&lt; "After shuffling ";
+<a name='L23'>  23   <a href='../Y/165.html' title='Multiple used in 6 places.'>j</a>.<a href='../S/2.html#L29' title='Defined at 29 in src/deck.cpp.'>shuffledeck</a>();
+<a name='L24'>  24 
+<a name='L25'>  25   <i><font color='green'>// std::cout &lt;&lt;guerreiro;</font></i>
+<a name='L26'>  26   <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/148.html' title='Multiple used in 15 places.'>cout</a> &lt;&lt;<a href='../Y/154.html' title='Multiple used in 2 places.'>guerreiro2</a>;
+<a name='L27'>  27   <i><font color='green'>// std::cout &lt;&lt; "Guerreiro is alive?"&lt;&lt;guerreiro.alive_&lt;&lt;std::endl;</font></i>
+<a name='L28'>  28   <i><font color='green'>// using namespace std;::cout</font></i>
+<a name='L29'>  29   <i><font color='green'>// &lt;&lt; "Guerreiro 2 is alive?"&lt;&lt;guerreiro2.alive_&lt;&lt;std::endl;</font></i>
+<a name='L30'>  30   <i><font color='green'>// std::cout&lt;&lt;std::endl&lt;&lt;"guerreiro ataca guerreiro2"&lt;&lt;std::endl;</font></i>
+<a name='L31'>  31   <i><font color='green'>// guerreiro&gt;&gt;guerreiro2;</font></i>
+<a name='L32'>  32   <i><font color='green'>// Cemetery cemetery;</font></i>
+<a name='L33'>  33   <i><font color='green'>// if(!guerreiro2.alive_)</font></i>
+<a name='L34'>  34   <i><font color='green'>// {</font></i>
+<a name='L35'>  35   <i><font color='green'>//   cemetery&lt;=guerreiro2;</font></i>
+<a name='L36'>  36   <i><font color='green'>// }</font></i>
+<a name='L37'>  37   <i><font color='green'>// if(!guerreiro.alive_)</font></i>
+<a name='L38'>  38   <i><font color='green'>// {</font></i>
+<a name='L39'>  39   <i><font color='green'>//   cemetery&lt;=guerreiro;</font></i>
+<a name='L40'>  40   <i><font color='green'>// }</font></i>
+<a name='L41'>  41   <i><font color='green'>// cemetery.showcemetery();</font></i>
+<a name='L42'>  42     
+<a name='L43'>  43 
+<a name='L44'>  44 
+<a name='L45'>  45 
+<a name='L46'>  46 
+<a name='L47'>  47 
+<a name='L48'>  48 
+<a name='L49'>  49     <b>return</b> 0;
+<a name='L50'>  50 <font color='red'>}</font>
+</pre>
+<hr>
+<a name='BOTTOM'>
+<i><font color='green'>/* [&lt;][&gt;][^]<a href='#L11'>[v]</a><a href='#TOP'>[top]</a>[bottom]<a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+</body>
+</html>

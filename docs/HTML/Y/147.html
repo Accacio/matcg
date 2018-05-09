@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>cardsindeck</title>
+<meta name='robots' content='noindex,nofollow'>
+<meta name='generator' content='GLOBAL-5.7.1'>
+</head>
+<body text='#191970' bgcolor='#f5f5dc' vlink='gray'>
+<pre>
+<a href='../S/12.html#L17'>cardsindeck</a>        17 include/deck.hpp     std::vector&lt;Card*&gt; cardsindeck;
+<a href='../S/2.html#L13'>cardsindeck</a>        13 src/deck.cpp       if (!(kmaxcardsindeck == cardsindeck.size())) {
+<a href='../S/2.html#L14'>cardsindeck</a>        14 src/deck.cpp           cardsindeck.push_back(card);
+<a href='../S/2.html#L22'>cardsindeck</a>        22 src/deck.cpp       if (!cardsindeck.empty()) {
+<a href='../S/2.html#L23'>cardsindeck</a>        23 src/deck.cpp           cardsindeck.pop_back();
+<a href='../S/2.html#L31'>cardsindeck</a>        31 src/deck.cpp       for (auto i = (cardsindeck.end()-cardsindeck.begin())-1; i &gt; 0; --i) {
+<a href='../S/2.html#L32'>cardsindeck</a>        32 src/deck.cpp         std::swap (cardsindeck.begin()[i],
+<a href='../S/2.html#L33'>cardsindeck</a>        33 src/deck.cpp                 cardsindeck.begin()[rand()%cardsindeck.size()]);
+<a href='../S/2.html#L38'>cardsindeck</a>        38 src/deck.cpp       if (cardsindeck.empty()) {
+<a href='../S/2.html#L43'>cardsindeck</a>        43 src/deck.cpp       for ( auto i = cardsindeck.end()-1;
+<a href='../S/2.html#L44'>cardsindeck</a>        44 src/deck.cpp               i &gt;= cardsindeck.begin();
+</pre>
+</body>
+</html>

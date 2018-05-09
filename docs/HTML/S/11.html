@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>include/cemetery.hpp</title>
+<meta name='robots' content='noindex,nofollow'>
+<meta name='generator' content='GLOBAL-5.7.1'>
+</head>
+<body text='#191970' bgcolor='#f5f5dc' vlink='gray'>
+<a name='TOP'><h2><a href='../mains.html'>root</a>/<a href='../files/166.html'>include</a>/cemetery.hpp</h2>
+<i><font color='green'>/* [&lt;][&gt;][^][v][top]<a href='#BOTTOM'>[bottom]</a><a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+<hr>
+<h2><a href='../J/6.html' title='Multiple included from 3 places.'>INCLUDED FROM</a></h2>
+<hr>
+<pre>
+<a name='L1'>   1 <font color='darkred'>#ifndef</font> <a href='../S/11.html#L2' title='Defined at 2 in include/cemetery.hpp.'>CEMETERY_H</a>
+<a name='L2'>   2 <font color='darkred'>#define</font> <a href='../S/11.html#L1' title='Refered from 1 in include/cemetery.hpp.'>CEMETERY_H</a>
+<a name='L3'>   3 
+<a name='L4'>   4 <font color='darkred'>#include</font>&lt;<a href='14.html'>card.hpp</a>&gt;
+<a name='L5'>   5 <font color='darkred'>#include</font>&lt;vector&gt;
+<a name='L6'>   6 
+<a name='L7'>   7 <b>class</b> <a href='../R/10.html' title='Multiple refered from 7 places.'>Cemetery</a> <font color='red'>{</font>
+<a name='L8'>   8  <b>public</b>:
+<a name='L9'>   9     <a href='../D/10.html' title='Multiple defined in 3 places.'>Cemetery</a>();
+<a name='L10'>  10     <b>virtual</b> ~<a href='../D/10.html' title='Multiple defined in 3 places.'>Cemetery</a>();
+<a name='L11'>  11     <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/192.html' title='Multiple used in 2 places.'>vector</a>&lt;<a href='../D/9.html' title='Multiple defined in 3 places.'>Card</a>&gt; <a href='../Y/146.html' title='Multiple used in 5 places.'>cardsincemetery</a>;
+<a name='L12'>  12     <b>void</b> <a href='../S/5.html#L11' title='Defined at 11 in src/cemetery.cpp.'>showcemetery</a>();
+<a name='L13'>  13     <i><font color='green'>/** @brief Sends Card to Cemetery*/</font></i>
+<a name='L14'>  14     <b>void</b> <a href='../S/5.html#L25' title='Defined at 25 in src/cemetery.cpp.'>sendtocemetery</a>(<a href='../Y/1.html' title='Multiple used in 8 places.'>Card</a> <a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>);
+<a name='L15'>  15     <b>void</b> <b>operator</b>&lt;=(<b>const</b> <a href='../Y/1.html' title='Multiple used in 8 places.'>Card</a> &amp; <a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>) <font color='red'>{</font>
+<a name='L16'>  16         <a href='../S/5.html#L25' title='Defined at 25 in src/cemetery.cpp.'>sendtocemetery</a>(<a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>);
+<a name='L17'>  17         <b>return</b>;
+<a name='L18'>  18     <font color='red'>}</font>
+<a name='L19'>  19 
+<a name='L20'>  20  <b>protected</b>:
+<a name='L21'>  21  <b>private</b>:
+<a name='L22'>  22 <font color='red'>}</font>;
+<a name='L23'>  23 
+<a name='L24'>  24 <font color='darkred'>#endif</font> <i><font color='green'>// CEMETERY_H</font></i>
+</pre>
+<hr>
+<a name='BOTTOM'>
+<i><font color='green'>/* [&lt;][&gt;][^][v]<a href='#TOP'>[top]</a>[bottom]<a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+</body>
+</html>

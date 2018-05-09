@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>card</title>
+<meta name='robots' content='noindex,nofollow'>
+<meta name='generator' content='GLOBAL-5.7.1'>
+</head>
+<body text='#191970' bgcolor='#f5f5dc' vlink='gray'>
+<pre>
+<a href='../S/14.html#L16'>card</a>               16 include/card.hpp     bool operator==(const Card &amp; card) {
+<a href='../S/14.html#L18'>card</a>               18 include/card.hpp         s = (name_ == card.name_);
+<a href='../S/11.html#L14'>card</a>               14 include/cemetery.hpp     void sendtocemetery(Card card);
+<a href='../S/11.html#L15'>card</a>               15 include/cemetery.hpp     void operator&lt;=(const Card &amp; card) {
+<a href='../S/11.html#L16'>card</a>               16 include/cemetery.hpp         sendtocemetery(card);
+<a href='../S/12.html#L22'>card</a>               22 include/deck.hpp     void addtodeck(Card *card);
+<a href='../S/12.html#L28'>card</a>               28 include/deck.hpp     void operator &lt;&lt; (Card&amp; card) {
+<a href='../S/12.html#L29'>card</a>               29 include/deck.hpp         addtodeck(&amp;card);
+<a href='../S/10.html#L18'>card</a>               18 include/monster.hpp     void operator&gt;&gt;(Monster&amp; card) {
+<a href='../S/10.html#L19'>card</a>               19 include/monster.hpp         card.life_ -= attack_;
+<a href='../S/10.html#L20'>card</a>               20 include/monster.hpp         if (card.life_ &lt;= 0) {
+<a href='../S/10.html#L21'>card</a>               21 include/monster.hpp             card.alive_ = false;
+<a href='../S/10.html#L23'>card</a>               23 include/monster.hpp                   std::cout &lt;&lt; card &lt;&lt; " is dead";
+<a href='../S/10.html#L26'>card</a>               26 include/monster.hpp         life_ -= card.attack_;
+<a href='../S/5.html#L25'>card</a>               25 src/cemetery.cpp void Cemetery::sendtocemetery(Card card) {
+<a href='../S/5.html#L26'>card</a>               26 src/cemetery.cpp     cardsincemetery.push_back(card);
+<a href='../S/2.html#L12'>card</a>               12 src/deck.cpp   void Deck::addtodeck(Card *card) {
+<a href='../S/2.html#L14'>card</a>               14 src/deck.cpp           cardsindeck.push_back(card);
+</pre>
+</body>
+</html>

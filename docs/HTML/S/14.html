@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>include/card.hpp</title>
+<meta name='robots' content='noindex,nofollow'>
+<meta name='generator' content='GLOBAL-5.7.1'>
+</head>
+<body text='#191970' bgcolor='#f5f5dc' vlink='gray'>
+<a name='TOP'><h2><a href='../mains.html'>root</a>/<a href='../files/166.html'>include</a>/card.hpp</h2>
+<i><font color='green'>/* [&lt;][&gt;]<a href='#L15'>[^]</a>[v][top]<a href='#BOTTOM'>[bottom]</a><a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+<hr>
+<h2><a href='../J/5.html' title='Multiple included from 6 places.'>INCLUDED FROM</a></h2>
+<hr>
+<h2>DEFINITIONS</h2>
+This source file includes following definitions.
+<ol>
+<li><a href='#L15' title='Defined at 15.'>print</a>
+</ol>
+<hr>
+<pre>
+<a name='L1'>   1 <font color='darkred'>#ifndef</font> <a href='../S/14.html#L2' title='Defined at 2 in include/card.hpp.'>CARD_H</a>
+<a name='L2'>   2 <font color='darkred'>#define</font> <a href='../S/14.html#L1' title='Refered from 1 in include/card.hpp.'>CARD_H</a>
+<a name='L3'>   3 
+<a name='L4'>   4 <font color='darkred'>#include</font>&lt;<a href='13.html'>player.hpp</a>&gt;
+<a name='L5'>   5 
+<a name='L6'>   6 <font color='darkred'>#include</font>&lt;iostream&gt;
+<a name='L7'>   7 <font color='darkred'>#include</font>&lt;string&gt;
+<a name='L8'>   8 
+<a name='L9'>   9 <b>class</b> <a href='../R/9.html' title='Multiple refered from 7 places.'>Card</a> <font color='red'>{</font>
+<a name='L10'>  10  <b>public</b>:
+<a name='L11'>  11     <b>bool</b> <a href='../Y/138.html' title='Multiple used in 5 places.'>alive_</a>;
+<a name='L12'>  12     <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/187.html' title='Multiple used in 6 places.'>string</a> <a href='../Y/172.html' title='Multiple used in 9 places.'>name_</a>;
+<a name='L13'>  13     <a href='../D/9.html' title='Multiple defined in 3 places.'>Card</a>();
+<a name='L14'>  14     <b>virtual</b> ~<a href='../D/9.html' title='Multiple defined in 3 places.'>Card</a>();
+<a name='L15'>  15     <b>virtual</b> <b>void</b> <a href='../S/14.html#L24' title='Refered from 24 in include/card.hpp.'>print</a>() <b>const</b> <font color='red'>{</font> <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/148.html' title='Multiple used in 15 places.'>cout</a> &lt;&lt; <a href='../Y/172.html' title='Multiple used in 9 places.'>name_</a>; <font color='red'>}</font>
+<a name='L16'>  16     <b>bool</b> <b>operator</b>==(<b>const</b> <a href='../Y/1.html' title='Multiple used in 8 places.'>Card</a> &amp; <a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>) <font color='red'>{</font>
+<a name='L17'>  17         <b>bool</b> <a href='../Y/181.html' title='Multiple used in 3 places.'>s</a>;
+<a name='L18'>  18         <a href='../Y/181.html' title='Multiple used in 3 places.'>s</a> = (<a href='../Y/172.html' title='Multiple used in 9 places.'>name_</a> == <a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>.<a href='../Y/172.html' title='Multiple used in 9 places.'>name_</a>);
+<a name='L19'>  19         <b>return</b> <a href='../Y/181.html' title='Multiple used in 3 places.'>s</a>;
+<a name='L20'>  20     <font color='red'>}</font>
+<a name='L21'>  21 
+<a name='L22'>  22     <b>void</b> <a href='../S/1.html#L15' title='Defined at 15 in src/monster.cpp.'>restore_init_vals</a>();
+<a name='L23'>  23     <b>friend</b> <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/174.html' title='Multiple used in 3 places.'>ostream</a>&amp; <b>operator</b>&lt;&lt;(<a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/174.html' title='Multiple used in 3 places.'>ostream</a>&amp; <a href='../Y/173.html' title='Multiple used in 2 places.'>os</a>, <b>const</b> <a href='../Y/1.html' title='Multiple used in 8 places.'>Card</a>&amp; <a href='../Y/136.html' title='Multiple used in 5 places.'>a</a> ) <font color='red'>{</font>
+<a name='L24'>  24      <a href='../Y/136.html' title='Multiple used in 5 places.'>a</a>.<a href='../D/30.html' title='Multiple defined in 2 places.'>print</a>();
+<a name='L25'>  25      <b>return</b> <a href='../Y/173.html' title='Multiple used in 2 places.'>os</a>;
+<a name='L26'>  26 <font color='red'>}</font>
+<a name='L27'>  27 
+<a name='L28'>  28 
+<a name='L29'>  29 
+<a name='L30'>  30 
+<a name='L31'>  31  <b>protected</b>:
+<a name='L32'>  32     <i><font color='green'>// create initial values, in case restoration is needed.</font></i>
+<a name='L33'>  33     <b>bool</b> <a href='../Y/139.html' title='Multiple used in 3 places.'>alive_init_</a>;
+<a name='L34'>  34     <b>int</b> <a href='../Y/169.html' title='Multiple used in 3 places.'>life_init_</a>;
+<a name='L35'>  35     <b>int</b> <a href='../Y/143.html' title='Multiple used in 3 places.'>attack_init_</a>;
+<a name='L36'>  36 
+<a name='L37'>  37  <b>private</b>:
+<a name='L38'>  38 <font color='red'>}</font>;
+<a name='L39'>  39 
+<a name='L40'>  40 <font color='darkred'>#endif</font> <i><font color='green'>// CARD_H</font></i>
+</pre>
+<hr>
+<a name='BOTTOM'>
+<i><font color='green'>/* [&lt;][&gt;][^]<a href='#L15'>[v]</a><a href='#TOP'>[top]</a>[bottom]<a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>src/cemetery.cpp</title>
+<meta name='robots' content='noindex,nofollow'>
+<meta name='generator' content='GLOBAL-5.7.1'>
+</head>
+<body text='#191970' bgcolor='#f5f5dc' vlink='gray'>
+<a name='TOP'><h2><a href='../mains.html'>root</a>/<a href='../files/167.html'>src</a>/cemetery.cpp</h2>
+<i><font color='green'>/* [&lt;][&gt;]<a href='#L11'>[^]</a><a href='#L25'>[v]</a>[top]<a href='#BOTTOM'>[bottom]</a><a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+<hr>
+<h2>DEFINITIONS</h2>
+This source file includes following definitions.
+<ol>
+<li><a href='#L11' title='Defined at 11.'>showcemetery</a>
+<li><a href='#L25' title='Defined at 25.'>sendtocemetery</a>
+</ol>
+<hr>
+<pre>
+<a name='L1'>   1 <font color='darkred'>#include</font> "<a href='11.html'>cemetery.hpp</a>"
+<a name='L2'>   2 
+<a name='L3'>   3 <a href='../R/10.html' title='Multiple refered from 7 places.'>Cemetery</a>::<a href='../D/10.html' title='Multiple defined in 3 places.'>Cemetery</a>() <font color='red'>{</font>
+<a name='L4'>   4     <i><font color='green'>// ctor</font></i>
+<a name='L5'>   5 <font color='red'>}</font>
+<a name='L6'>   6 
+<a name='L7'>   7 <a href='../R/10.html' title='Multiple refered from 7 places.'>Cemetery</a>::~<a href='../D/10.html' title='Multiple defined in 3 places.'>Cemetery</a>() <font color='red'>{</font>
+<a name='L8'>   8     <i><font color='green'>// dtor</font></i>
+<a name='L9'>   9 <font color='red'>}</font>
+<a name='L10'>  10 
+<a name='L11'>  11 <b>void</b> <a href='../D/10.html' title='Multiple defined in 3 places.'>Cemetery</a>::<a href='../S/11.html#L12' title='Refered from 12 in include/cemetery.hpp.'>showcemetery</a>() <font color='red'>{</font>
+<a name='L12'>  12     <b>if</b> (<a href='../Y/146.html' title='Multiple used in 5 places.'>cardsincemetery</a>.<a href='../Y/149.html' title='Multiple used in 3 places.'>empty</a>()) <font color='red'>{</font>
+<a name='L13'>  13         <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/148.html' title='Multiple used in 15 places.'>cout</a> &lt;&lt; "cemetery is empty" &lt;&lt; <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/151.html' title='Multiple used in 6 places.'>endl</a>;
+<a name='L14'>  14         <b>return</b>;
+<a name='L15'>  15     <font color='red'>}</font>
+<a name='L16'>  16     <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/148.html' title='Multiple used in 15 places.'>cout</a> &lt;&lt; "Cards in cemetery are:\n";
+<a name='L17'>  17     <b>for</b> ( <b>auto</b> <a href='../Y/156.html' title='Multiple used in 10 places.'>i</a> = <a href='../Y/146.html' title='Multiple used in 5 places.'>cardsincemetery</a>.<a href='../Y/150.html' title='Multiple used in 3 places.'>end</a>()-1;
+<a name='L18'>  18             <a href='../Y/156.html' title='Multiple used in 10 places.'>i</a> &gt;= <a href='../Y/146.html' title='Multiple used in 5 places.'>cardsincemetery</a>.<a href='../Y/144.html' title='Multiple used in 5 places.'>begin</a>();
+<a name='L19'>  19             <a href='../Y/156.html' title='Multiple used in 10 places.'>i</a>--) <font color='red'>{</font>
+<a name='L20'>  20         <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/148.html' title='Multiple used in 15 places.'>cout</a> &lt;&lt; *<a href='../Y/156.html' title='Multiple used in 10 places.'>i</a> &lt;&lt; <a href='../Y/185.html' title='Multiple used in 27 places.'>std</a>::<a href='../Y/151.html' title='Multiple used in 6 places.'>endl</a>;
+<a name='L21'>  21     <font color='red'>}</font>
+<a name='L22'>  22     <b>return</b>;
+<a name='L23'>  23 <font color='red'>}</font>
+<a name='L24'>  24 
+<a name='L25'>  25 <b>void</b> <a href='../D/10.html' title='Multiple defined in 3 places.'>Cemetery</a>::<a href='../R/32.html' title='Multiple refered from 2 places.'>sendtocemetery</a>(<a href='../Y/1.html' title='Multiple used in 8 places.'>Card</a> <a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>) <font color='red'>{</font>
+<a name='L26'>  26     <a href='../Y/146.html' title='Multiple used in 5 places.'>cardsincemetery</a>.<a href='../Y/177.html' title='Multiple used in 2 places.'>push_back</a>(<a href='../Y/145.html' title='Multiple used in 18 places.'>card</a>);
+<a name='L27'>  27 <font color='red'>}</font>
+</pre>
+<hr>
+<a name='BOTTOM'>
+<i><font color='green'>/* [&lt;][&gt;]<a href='#L11'>[^]</a><a href='#L25'>[v]</a><a href='#TOP'>[top]</a>[bottom]<a href='../mains.html'>[index]</a><a href='../help.html'>[help]</a> */</font></i>
+</body>
+</html>

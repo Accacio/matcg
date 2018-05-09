@@ -1,0 +1,17 @@
+build/CMakeFiles/3.5.1/CompilerIdC/CMakeCCompilerId.c	S/153.html
+build/CMakeFiles/3.5.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	S/154.html
+build/CMakeFiles/feature_tests.c	S/149.html
+build/CMakeFiles/feature_tests.cxx	S/158.html
+include/card.hpp	S/14.html
+include/cemetery.hpp	S/11.html
+include/deck.hpp	S/12.html
+include/game.hpp	S/9.html
+include/monster.hpp	S/10.html
+include/player.hpp	S/13.html
+src/card.cpp	S/7.html
+src/cemetery.cpp	S/5.html
+src/deck.cpp	S/2.html
+src/game.cpp	S/6.html
+src/matcg.cpp	S/4.html
+src/monster.cpp	S/1.html
+src/player.cpp	S/3.html
