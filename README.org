@@ -1,7 +1,7 @@
 * matcg
 *Mathematical Trading Card Game*
-
-*** Rules 
+---
+** Rules 
 **** Match
 
 *** 2 Players
