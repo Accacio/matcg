@@ -1,0 +1,96 @@
+* matcg
+*Mathematical Trading Card Game*
+
+*** Rules 
+**** Match
+
+*** 2 Players
+*** 1 Battle Ground
+
+** Jogadores
+
+*** *XX* Health Points
+*** 1 Deck
+*** 1 Cemetery
+
+** Begin of match
+*** Cards are shuffled
+*** First player chosen
+
+** Turn
+
+Each turn is divided in 5 parts
+
+1. Read Deck
+2. Allocate field 
+3. Attack
+4. Defense
+5. Finish turn 
+
+
+*** Read Deck
+**** O jogador ativo pega as *xx* cartas do topo do tomo e coloca em sua mão
+
+
+*** Allocate field 
+**** O jogador ativo escolhe quais cartas irá invocar ao campo de batalha
+
+
+*** Attack
+**** O jogador ativo escolhe com quais cartas ele quer atacar o outro jogador
+
+
+*** Defense
+**** O outro jogador escolhe com quais cartas ele deseja bloquear
+
+
+*** Finish turn 
+**** Existe o incremento do tempo de jogo em X unidades, que pode ser mudado através de feitiços.
+**** O jogador ativo se inativa e passa atividade para o outro jogador
+
+
+
+** Sobre as Cartas
+
+Cada carta possui um custo necessário para invocá-la no campo de batalha ou para realizar alguma habilidade especial.
+As cartas podem ser:
+
+1. Monstros
+2. Mágicas
+3. Híbridas
+4. **Manas**
+
+*** Monstros
+
+**** Possuem Pontos de Vida
+**** Possuem Pontos de Ataque
+
+*** Mágicas
+
+**** São capazes de realizar alguma habilidade especial
+**** Podem permanecer no campo por um número explicitado de turnos
+
+*** Híbridas
+
+**** Combinam as características dos outros anteriores 
+
+*** Manas
+
+**** Custo para invocar alguma carta
+
+*** Dos Pontos de Vida, dos Pontos de Ataque e dos Feitiços
+
+**** Os Pontos de Vida e de Ataque das cartas serão funções matemáticas cujo argumento é o tempo atual de jogo
+**** Os feitiços irão alterar de alguma forma a Partida, mudando ou
+
+    
+    * A função dos Pontos de Vida de uma carta ou o valor de Pontos de Vida de um Jogador
+    * A função dos Pontos de Ataque de uma carta
+    * O argumento da função dos Pontos de Vida ou de Ataque de uma carta
+    * O incremento de tempo dado entre turnos
+    * Etc...
+
+[[file:README_pt.org][Português]]
+
+
+

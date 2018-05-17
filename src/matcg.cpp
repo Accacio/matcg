@@ -1,12 +1,12 @@
-#include<game.hpp>
-#include<cemetery.hpp>
-#include<card.hpp>
-#include<monster.hpp>
-#include<player.hpp>
-#include<deck.hpp>
+#include <game.hpp>
+#include <cemetery.hpp>
+#include <card.hpp>
+#include <monster.hpp>
+#include <player.hpp>
+#include <deck.hpp>
 
-#include<vector>
-#include<iostream>
+#include <vector>
+#include <iostream>
 
 int main(int argc, char *argv[]) {
   Monster guerreiro2("guerreiro2", 2, 4, 0);
