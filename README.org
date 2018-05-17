@@ -1,11 +1,11 @@
 * matcg
 *Mathematical Trading Card Game*
----
+
 ** Rules 
 **** Match
 
 *** 2 Players
-*** 1 Battle Ground
+*** 1 Battleground
 
 ** Jogadores
 
@@ -29,66 +29,55 @@ Each turn is divided in 5 parts
 
 
 *** Read Deck
-**** O jogador ativo pega as *xx* cartas do topo do tomo e coloca em sua mão
-
+ The active player takes the first *xx* cards of the deck and puts them in 
+(her)his hand
 
 *** Allocate field 
-**** O jogador ativo escolhe quais cartas irá invocar ao campo de batalha
-
+The active player chooses which cards he will invoke in the battleground
 
 *** Attack
-**** O jogador ativo escolhe com quais cartas ele quer atacar o outro jogador
-
+The active player chooses with wich cards he wants to attack the other
+player or card
 
 *** Defense
-**** O outro jogador escolhe com quais cartas ele deseja bloquear
+The other player chooses with wich cards from the battleground he wants to
+defend (her)himself
 
 
 *** Finish turn 
-**** Existe o incremento do tempo de jogo em X unidades, que pode ser mudado através de feitiços.
-**** O jogador ativo se inativa e passa atividade para o outro jogador
+Time is incremmented in X units, that can be changed based on spells
+
+The active player becomes inactive and the other player becomes active.
 
 
+** About the Cards
 
-** Sobre as Cartas
+Each card has a cost to be invoked. 
+Cards can be:
 
-Cada carta possui um custo necessário para invocá-la no campo de batalha ou para realizar alguma habilidade especial.
-As cartas podem ser:
+1. Monsters
+2. Magic Cards
+3. Hybrids
+4. *Manas*
 
-1. Monstros
-2. Mágicas
-3. Híbridas
-4. **Manas**
+*** Monsters
+    Have Attack and  Health Points
 
-*** Monstros
+*** Magic Cards
+    Can have special habilities
+    Stay in battleground for a specific time 
 
-**** Possuem Pontos de Vida
-**** Possuem Pontos de Ataque
-
-*** Mágicas
-
-**** São capazes de realizar alguma habilidade especial
-**** Podem permanecer no campo por um número explicitado de turnos
-
-*** Híbridas
-
-**** Combinam as características dos outros anteriores 
+*** Hybrids
+    Combine last characteristics
 
 *** Manas
+    Cost to invoke some card
 
-**** Custo para invocar alguma carta
+*** AP HP and Spells
+    HP and AP are mathematical functions which argument is the time variable
+    Spells can change behavior of these functions
 
-*** Dos Pontos de Vida, dos Pontos de Ataque e dos Feitiços
-
-**** Os Pontos de Vida e de Ataque das cartas serão funções matemáticas cujo argumento é o tempo atual de jogo
-**** Os feitiços irão alterar de alguma forma a Partida, mudando ou
-
-    
-    * A função dos Pontos de Vida de uma carta ou o valor de Pontos de Vida de um Jogador
-    * A função dos Pontos de Ataque de uma carta
-    * O argumento da função dos Pontos de Vida ou de Ataque de uma carta
-    * O incremento de tempo dado entre turnos
-    * Etc...
+    Ex: Change HP or AP function, Increment time, etc ...
 
 [[file:README_pt.org][Português]]
 

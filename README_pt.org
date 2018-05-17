@@ -30,23 +30,23 @@ Cada turno é dividido em 5  partes:
 
 *** Leitura do tomo
 
-**** O jogador ativo pega as *xx* cartas do topo do tomo e coloca em sua mão
+    O jogador ativo pega as *xx* cartas do topo do tomo e coloca em sua mão
 
 *** Alocação do campo
 
-**** O jogador ativo escolhe quais cartas irá invocar ao campo de batalha
+    O jogador ativo escolhe quais cartas irá invocar ao campo de batalha
 
 *** Ataque
 
-**** O jogador ativo escolhe com quais cartas ele quer atacar o outro jogador
+    O jogador ativo escolhe com quais cartas ele quer atacar o outro jogador
 
 *** Defesa
 
-**** O outro jogador escolhe com quais cartas ele deseja bloquear
+    O outro jogador escolhe com quais cartas ele deseja bloquear
 
 *** Finalização do Turno
-**** Existe o incremento do tempo de jogo em X unidades, que pode ser mudado através de feitiços.
-**** O jogador ativo se inativa e passa atividade para o outro jogador
+    Existe o incremento do tempo de jogo em X unidades, que pode ser mudado através de feitiços.
+    O jogador ativo se inativa e passa atividade para o outro jogador
 
 ** Sobre as Cartas
 
@@ -56,30 +56,24 @@ As cartas podem ser:
 1. Monstros
 2. Mágicas
 3. Híbridas
-4. **Manas**
+4. *Manas*
 
 *** Monstros
-
-**** Possuem Pontos de Vida
-**** Possuem Pontos de Ataque
+    Possuem Pontos de Vida e de Ataque
 
 *** Mágicas
-
-**** São capazes de realizar alguma habilidade especial
-**** Podem permanecer no campo por um número explicitado de turnos
+    São capazes de realizar alguma habilidade especial
+    Podem permanecer no campo por um número explicitado de turnos
 
 *** Híbridas
-
-**** Combinam as características dos outros anteriores 
+    Combinam as características dos outros anteriores 
 
 *** Manas
-
-**** Custo para invocar alguma carta
+    Custo para invocar alguma carta
 
 *** Dos Pontos de Vida, dos Pontos de Ataque e dos Feitiços
-
-**** Os Pontos de Vida e de Ataque das cartas serão funções matemáticas cujo argumento é o tempo atual de jogo
-**** Os feitiços irão alterar de alguma forma a Partida, mudando ou
+    Os Pontos de Vida e de Ataque das cartas serão funções matemáticas cujo argumento é o tempo atual de jogo
+    Os feitiços irão alterar de alguma forma a Partida, mudando ou
 
     
     * A função dos Pontos de Vida de uma carta ou o valor de Pontos de Vida de um Jogador
