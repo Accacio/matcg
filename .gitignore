@@ -29,6 +29,16 @@
 *.depend
 *.save-failed
 
+# build
+build/
+
+# gtags
+G*
+
+
 # Emacs autosave
 *#
 *~
+
+# Markdown
+*.md

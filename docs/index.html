@@ -79,92 +79,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Mathematical Trading <a class="el" href="classCard.html">Card</a> <a class="el" href="classGame.html">Game</a></b></p>
-<p><em>Jogo de Cartas Matemático</em></p>
-<h2>Regras do jogo</h2>
-<h3>Partida</h3>
-<ul>
-<li>2 Jogadores</li>
-<li>1 Campo de Batalha</li>
-</ul>
-<h3>Jogadores</h3>
-<ul>
-<li><em>XX</em> Pontos de Vida</li>
-<li>1 Tomo</li>
-<li>1 Cemitério</li>
-</ul>
-<h3>Início da Partida</h3>
-<ul>
-<li>Cartas são embaralhadas</li>
-<li>Jogador que iniciará jogando será escolhido</li>
-</ul>
-<h3>Turno</h3>
-<p>Cada turno é dividido em 5 partes:</p>
+<h2>Rules</h2>
 <ol type="1">
-<li>Leitura do tomo</li>
-<li>Alocação do campo</li>
-<li>Ataque</li>
-<li>Defesa</li>
-<li>Finalização do Turno</li>
+<li>Match</li>
 </ol>
-<h4>Leitura do tomo</h4>
-<ul>
-<li>O jogador ativo pega as <em>xx</em> cartas do topo do tomo e coloca em sua mão</li>
-</ul>
-<h4>Alocação do campo</h4>
-<ul>
-<li>O jogador ativo escolhe quais cartas irá invocar ao campo de batalha</li>
-</ul>
-<h4>Ataque</h4>
-<ul>
-<li>O jogador ativo escolhe com quais cartas ele quer atacar o outro jogador</li>
-</ul>
-<h4>Defesa</h4>
-<ul>
-<li>O outro jogador escolhe com quais cartas ele deseja bloquear</li>
-</ul>
-<h4>Finalização do Turno</h4>
-<ul>
-<li>Existe o incremento do tempo de jogo em X unidades, que pode ser mudado através de feitiços.</li>
-<li>O jogador ativo se inativa e passa atividade para o outro jogador</li>
-</ul>
-<h3>Sobre as Cartas</h3>
-<p>Cada carta possui um custo necessário para invocá-la no campo de batalha ou para realizar alguma habilidade especial. As cartas podem ser:</p>
+<h3>2 Players</h3>
+<h3>1 Battleground</h3>
+<h2>Jogadores</h2>
+<h3>**XX** Health Points</h3>
+<h3>1 <a class="el" href="classDeck.html" title="Deck of Cards. ">Deck</a></h3>
+<h3>1 <a class="el" href="classCemetery.html">Cemetery</a></h3>
+<h2>Begin of match</h2>
+<h3>Cards are shuffled</h3>
+<h3>First player chosen</h3>
+<h2>Turn</h2>
+<p>Each turn is divided in 5 parts</p>
 <ol type="1">
-<li>Monstros</li>
-<li>Mágicas</li>
-<li>Híbridas</li>
+<li>Read <a class="el" href="classDeck.html" title="Deck of Cards. ">Deck</a></li>
+<li>Allocate field</li>
+<li>Attack</li>
+<li>Defense</li>
+<li>Finish turn</li>
+</ol>
+<h3>Read <a class="el" href="classDeck.html" title="Deck of Cards. ">Deck</a></h3>
+<p>The active player takes the first <b>xx</b> cards of the deck and puts them in (her)his hand</p>
+<h3>Allocate field</h3>
+<p>The active player chooses which cards he will invoke in the battleground</p>
+<h3>Attack</h3>
+<p>The active player chooses with wich cards he wants to attack the other player or card</p>
+<h3>Defense</h3>
+<p>The other player chooses with wich cards from the battleground he wants to defend (her)himself</p>
+<h3>Finish turn</h3>
+<p>Time is incremmented in X units, that can be changed based on spells</p>
+<p>The active player becomes inactive and the other player becomes active.</p>
+<h2>About the Cards</h2>
+<p>Each card has a cost to be invoked. Cards can be:</p>
+<ol type="1">
+<li>Monsters</li>
+<li>Magic Cards</li>
+<li>Hybrids</li>
 <li><b>Manas</b></li>
 </ol>
-<h4>Monstros</h4>
-<ul>
-<li>Possuem Pontos de Vida</li>
-<li>Possuem Pontos de Ataque</li>
-</ul>
-<h4>Mágicas</h4>
-<ul>
-<li>São capazes de realizar alguma habilidade especial</li>
-<li>Podem permanecer no campo por um número explicitado de turnos</li>
-</ul>
-<h4>Híbridas</h4>
-<ul>
-<li>Combinam as características dos outros anteriores</li>
-</ul>
-<h4>Manas</h4>
-<ul>
-<li>Custo para invocar alguma carta</li>
-</ul>
-<h3>Dos Pontos de Vida, dos Pontos de Ataque e dos Feitiços</h3>
-<ul>
-<li>Os Pontos de Vida e de Ataque das cartas serão funções matemáticas cujo argumento é o tempo atual de jogo</li>
-<li>Os feitiços irão alterar de alguma forma a Partida, mudando ou<ul>
-<li>A função dos Pontos de Vida de uma carta ou o valor de Pontos de Vida de um Jogador</li>
-<li>A função dos Pontos de Ataque de uma carta</li>
-<li>O argumento da função dos Pontos de Vida ou de Ataque de uma carta</li>
-<li>O incremento de tempo dado entre turnos</li>
-<li>Etc... </li>
-</ul>
-</li>
-</ul>
+<h3>Monsters</h3>
+<p>Have Attack and Health Points</p>
+<h3>Magic Cards</h3>
+<p>Can have special habilities Stay in battleground for a specific time</p>
+<h3>Hybrids</h3>
+<p>Combine last characteristics</p>
+<h3>Manas</h3>
+<p>Cost to invoke some card</p>
+<h3>AP HP and Spells</h3>
+<p>HP and AP are mathematical functions which argument is the time variable Spells can change behavior of these functions</p>
+<p>Ex: Change HP or AP function, Increment time, etc &amp;#x2026;</p>
+<p>Português </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
